@@ -15,12 +15,14 @@ This website is targeted to users who show an interest in playing the game or ar
 
 
 # Credits
-Content
+Content:
 
 
 
-Media
+Media:
 
 
 
-Acknowledgements
+Acknowledgements:
+-https://punishing-gray-raven.fandom.com/wiki/Punishing_Gray_Raven (w
+

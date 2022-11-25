@@ -2,3 +2,30 @@
     text-align: center;
     color: black;
 }
+body {
+    background-color: grey;
+}
+.container {
+    position: relative;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+}

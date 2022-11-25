@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 .center {
     text-align: center;
     color: black;
@@ -8,24 +9,29 @@ body {
 .container {
     position: relative;
 }
-.topleft {
+.logo {
     position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
+    top: 16px;
+    left: 200px;
+    
 }
 body {
   font-size: 100%;
 }
 
-h1 {
-  font-size: 2.5em;
+.titleadjust {
+  font-size: 1.9em;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.875em;
+
+
 }
 
 p {
   font-size: 0.875em;
 }
+

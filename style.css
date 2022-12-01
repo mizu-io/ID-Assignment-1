@@ -33,7 +33,7 @@ body {
 	margin: 0;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url("Home Page Images/pgr-homepage-background.jpg")
+  background-image: url("Images/Home Page Images/pgr-homepage-background.jpg")
 }
 
 .site-logo {
@@ -86,21 +86,7 @@ body {
   font-size: 1.75em;
   color: white;
 }
-.flex-container-characters {
-  height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  border: solid black;
-}
 
-
-.imagecontainer {
-  position: relative;
-  width: 18%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
 
 
 /* navigation styles start here */

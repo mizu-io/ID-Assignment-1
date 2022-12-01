@@ -5,6 +5,7 @@
     color: black;
 }
 
+
 .container {
     position: relative;
 }
@@ -15,12 +16,6 @@
     
 }
 
-.titleadjust {
-  font-size: 2.5em;
-  font-family: "Barlow Condensed", sans-serif;
-  color: black;
-  font-weight: 100;
-}
 
 section {
   color: black;
@@ -33,22 +28,26 @@ html {
 
 
 body {
+  width: auto;
   height: auto;
 	margin: 0;
-  max-width: 100%;
   background-size: 100%;
-  background-position: top;
+  background-repeat: no-repeat;
   background-image: url("Home Page Images/pgr-homepage-background.jpg")
 }
 
-
+.site-logo {
+  margin-top: -10px;
+  margin-bottom: -30px;
+  margin-left: 40px;
+}
 
 
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-  --background: rgba(0, 0, 0, 0);
+  --background: rgb(56, 47, 83);
 }
 
 *, *::before, *::after {
@@ -67,26 +66,41 @@ body {
 }
 
 .flex-container {
-	height: 500px;
+	height: 100%;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction:column;
 }
 
 .flex-container > div {
-  width: 100%;
+  width: 40%;
   height: 100%;
-  line-height: 75px;
-  border: 10px solid rgba(115, 115, 151, 0.7);
-  margin-top: 100px;
+  padding: 10px;
+  background-color: rgba(115, 115, 151, 1);
+  margin-top: 20%;
   margin-left: 80px;
-  margin-right: 80px;
+  margin-right: 50%;
+  margin-bottom: 20px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 50;
-  font-size: 4em;
+  font-size: 1.75em;
+  color: white;
+}
+.flex-container-characters {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  border: solid black;
 }
 
 
+.imagecontainer {
+  position: relative;
+  width: 18%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 
 
 /* navigation styles start here */
@@ -97,14 +111,14 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
 }
 
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  position: absolute;
+  top: -9999px ;
+  left: -9999px ;
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
@@ -191,7 +205,7 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none;
   }
@@ -201,8 +215,11 @@ nav a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
   
-  .titleadjust {
-    grid-column: 2 / 3;
+  .site-logo {
+    margin-top: -10px;
+    margin-bottom: -20px;
+    margin-left: 40px;
+    grid-column: 1 / ;
   }
   
   nav {

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+
+
+.icon-text {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
 .center {
     text-align: center;
     color: black;
@@ -9,12 +17,7 @@
 .container {
     position: relative;
 }
-.logo {
-    position: absolute;
-    top: 16px;
-    left: 200px;
-    
-}
+
 
 
 section {
@@ -28,18 +31,17 @@ html {
 
 
 body {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 	margin: 0;
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-image: url("Images/Home Page Images/pgr-homepage-background.jpg")
 }
 
 .site-logo {
-  margin-top: -10px;
-  margin-bottom: -30px;
-  margin-left: 40px;
+  height: 80px;
+  width: 145px;
 }
 
 
@@ -54,16 +56,35 @@ body {
   box-sizing: border-box;
 }
 
-
-.content {
-  height: 200vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-color: lightgray;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
+.char-img {
+  height: 258px;
+  width: 250px;
+  margin-left: 100px;
+  margin-right: 80px;
+  border: 2px solid  rgb(87, 87, 114);
+  
 }
+
+
+.image-container {
+  margin-left: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.character-img {
+  display:flex;
+  background-color: rgba(115, 115, 151, 1);
+  margin-right: 5%;
+  
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 50;
+  font-size: 1.75em;
+  color: white;
+}
+
+
 
 .flex-container {
 	height: 100%;
@@ -75,12 +96,12 @@ body {
 .flex-container > div {
   width: 40%;
   height: 100%;
-  padding: 10px;
-  background-color: rgba(115, 115, 151, 1);
   margin-top: 20%;
   margin-left: 80px;
   margin-right: 50%;
   margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(115, 115, 151, 1);
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 50;
   font-size: 1.75em;
@@ -94,10 +115,10 @@ body {
 header {
   background: var(--background);
   text-align: center;
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: sans-serif;
   font-weight: 100;
 }
 
@@ -191,6 +212,13 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
+@media screen and (max-width: 768px) {
+  .character-img {
+    flex-direction: column;
+  }
+  
+}
+
 @media screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none;
@@ -202,10 +230,9 @@ nav a:hover {
   }
   
   .site-logo {
-    margin-top: -10px;
-    margin-bottom: -20px;
-    margin-left: 40px;
-    grid-column: 1 / ;
+    width: 210px;
+    height: 110px;
+    grid-column: 3 / 4;
   }
   
   nav {
@@ -246,8 +273,18 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1,1);
   }
+  .char-img {
+    height: 390px;
+    width: 350px;
+    margin: 40px;
+    border: 5px solid  rgb(87, 87, 114);
+    
+  }
+
+
 
 }
+
 
 
 

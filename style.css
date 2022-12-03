@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-
+.constructs {
+  position: relative;
+  left: 75px;
+  font-family: "Barlow Condensd", sans-serif;
+  color: var(--background);
+}
 
 .icon-text {
   font-weight: 100;
@@ -59,25 +63,18 @@ body {
 .char-img {
   height: 258px;
   width: 250px;
-  margin-left: 100px;
+  margin-left: 55px;
   margin-right: 80px;
+  margin-bottom: 40px;
   border: 2px solid  rgb(87, 87, 114);
-  
 }
 
-
-.image-container {
-  margin-left: 100px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 .character-img {
-  display:flex;
+  padding: 30px;
+  margin-top: 3%;
+  margin-left: 40px;
+  margin-right: 40px;
   background-color: rgba(115, 115, 151, 1);
-  margin-right: 5%;
-  
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 50;
   font-size: 1.75em;
@@ -216,6 +213,10 @@ nav a:hover {
   .character-img {
     flex-direction: column;
   }
+  .flex-container > div {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   
 }
 
@@ -274,13 +275,30 @@ nav a:hover {
     transform: scale(1,1);
   }
   .char-img {
-    height: 390px;
-    width: 350px;
-    margin: 40px;
-    border: 5px solid  rgb(87, 87, 114);
-    
+    height: 310px;
+    width: 270px;
+    margin: 20px;
+    border: 5px solid  rgb(87, 87, 114); 
   }
 
+  .character-img {
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: -5%;
+    background-color: rgba(115, 115, 151, 1);
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+  }
+
+  .constructs {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    font-family: "Barlow Condensd", sans-serif;
+    color: var(--background);
+  }
 
 
 }

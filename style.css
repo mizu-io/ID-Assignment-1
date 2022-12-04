@@ -26,7 +26,7 @@ header {
 }
 
 .nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(lightblue, .75);
+  outline: 3px solid lightblue;
 }
 
 .nav-toggle-label {
@@ -120,7 +120,7 @@ body {
 	margin: 0;
   background-size: 100%;
   background-repeat: repeat;
-  background-image: url("Images/Home Page Images/pgr-homepage-background.jpg")
+  background-image: url("Images/HomePageImages/pgr-homepage-background.jpg")
 }
 
 :root {
@@ -638,7 +638,6 @@ body {
   background-color: inherit;
   display: none;
   padding: 20px;
-  border: 1px solid inherit
 }
 
 .topright {

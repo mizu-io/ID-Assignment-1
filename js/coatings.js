@@ -1,4 +1,4 @@
-function opencoating(evt, atktype) {
+function opencoating(evt, coating) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,9 +8,7 @@ function opencoating(evt, atktype) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(atktype).style.display = "block";
+    document.getElementById(coating).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();

@@ -23,6 +23,20 @@ html {
   color: var(--background);
 }
 
+.character-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+}
+
+#char-section1 {
+  margin-top: 5%;
+  margin-left: 50px;
+  margin-right: 60px;
+  padding: 40px;
+  height: 100%;
+  background-color: rgba(115, 115, 151, 1);
+}
 
 
 .icon-text {
@@ -35,16 +49,6 @@ html {
     color: black;
 }
 
-
-.container {
-    position: relative;
-}
-
-
-
-
-
-
 body {
   width: 100%;
   height: 100%;
@@ -53,6 +57,8 @@ body {
   background-repeat: repeat;
   background-image: url("Images/Home Page Images/pgr-homepage-background.jpg")
 }
+
+
 
 .site-logo {
   height: 80px;
@@ -91,7 +97,7 @@ body {
 }
 
 #section2-char {
-  height: 1900%;
+  height: 260%;
   background-color: rgba(115, 115, 151, 1);
 }
 
@@ -132,7 +138,7 @@ body {
 .about-text {
   padding: 50px;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.68em;
 }
 
 .about-heading{
@@ -330,6 +336,10 @@ nav a:hover {
     border: 5px solid  rgb(87, 87, 114); 
   }
   
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -402,7 +412,7 @@ nav a:hover {
   
   .char-name {
     color: white;
-    
+
   }
 
   #section1-char {
@@ -564,13 +574,144 @@ nav a:hover {
     color: white;
     font-size: 0.5em;
   }
+
+  .footer-col{
+    width: 100%;
+}
+
+}
+
+/*Footer styles*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: var(--background);
+    padding: 70px 0;
+  margin-top: 6%;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+  background-color: rgba(115, 115, 151, 1);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 
+/*character page styles*/
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
 
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
 
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
 
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
 
 
 

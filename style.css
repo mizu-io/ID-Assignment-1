@@ -586,14 +586,14 @@ nav a:hover {
 
 .ability-img {
   margin-bottom: 50px;
-  text-align: right;
-  background-color: black;
+  text-align: left;
 }
 
 .ability-title {
   color: black;
   font-size: 0.8em;
   margin-top: 10%;
+  padding-left: 300px;
 }
 .ability-text {
   text-align: left;

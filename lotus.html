@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="js\coating.js"></script>
+    <script type="text/javascript" src="js\passive.js"></script>
+    <script type="text/javascript" src="js\attack.js"></script>
+    <script type="text/javascript" src="js\orb-tab.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="Images/Home Page Images/Site-logo.jpg" type="image/x-icon">
+    <title>Lucia.-.Lotus | Punishing: Gray Raven Wiki</title>
+</head>
+<header>
+        <a href="index.html">
+            <img src="Images/Home Page Images/punishing-gray-raven-logo.png" class="site-logo">
+        </a>
+    </h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='characters.html'>Characters</a></li>
+            <li><a href='items.html'>Items</a></li>
+            <li><a href='gameplay.html'>Gameplay</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+
+<body>
+<div class="character-heading" id="char-section1">
+    <div>
+        Lucia-Lotus
+    </div> 
+<div class="character-portrait">
+    <img src="Images/Character Images/Lucia/Character-Lotus-Portrait.webp"
+    class="char-portrait">
+</div>
+
+<div class="biography-title">
+    Biography
+</div>
+<div class="biography-text">
+    After the first Lucia had been infected by the Punishing Virus and found out the truth about Luna, the original Lucia decides to join with Luna after knowing Nikola lied about her death. Nikola decided to create a clone of her with the original memories but locked her memories for finding out the truth of her intention to join the Ascendants. Lucia is now the Captain of the Gray Raven Team alongside her commander and her team members Lee and Liv.
+</div>
+<div class="skills">
+    Skills
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openOrb(event, 'Red-Orb')">Red Orb</button>
+  <button class="tablinks" onclick="openOrb(event, 'Yellow-Orb')">Yellow Orb</button>
+  <button class="tablinks" onclick="openOrb(event, 'Blue-Orb')">Blue Orb</button>
+</div>
+
+<div id="Red-Orb" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <div class="ability-img">
+        <img src="Images/Character Images/Lucia/Orb_-_Lotus_-_Red.webp" width="80px" height="74px">
+    </div>
+    <h1 class="ability-title">Lotus - Initial Move</h1>
+    <p class="ability-text">Automatically uses a 3-Ping version of this attack upon switch-in.
+    Thrusts forward and pulls the target, dealing 266.72% / 533.32% / 800%
+    Physical DMG based on the number of orbs pinged.
+    </p>
+</div>
+
+<div id="Yellow-Orb" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <div class="ability-img">
+        <img src="Images/Character Images/Lucia/Orb_-_Lotus_-_Yellow.webp" width="80px" height="74px" >
+    </div>
+  <h1 class="ability-title">Lotus - Flash Strike</h1>
+  <p class="ability-text">Quickly strikes once and knocks the target airborne, dealing 150% / 300% / 450% Physical DMG based on the number or orbs pinged. 
+`</p>
+</div>
+
+<div id="Blue-Orb" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <div class="ability-img">
+    <img src="Images/Character Images/Lucia/Orb_-_Lotus_-_Blue.webp" width="80px" height="74px">
+</div>
+<h1 class="ability-title">Lotus - Wave Slash</h1>
+<p class="ability-text">Deals 100% / 200% / 300% Physical DMG and flares up weapon, all attacks deal 10% / 15% / 20% extra Fire DMG within 4/4/6 seconds based on the number of orbs pinged.
+</p>
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openatk(event, 'basic-atk')">Basic Attack</button>
+    <button class="tablinks" onclick="openatk(event, 'signature')">Signature</button>
+    <button class="tablinks" onclick="openatk(event, 'QTE')">QTE</button>
+    <button class="tablinks" onclick="openatk(event, 'type')">Type</button>
+    <button class="tablinks" onclick="openatk(event, 'awakening')">Awakening</button>
+  </div>
+  
+  <div id="basic-atk" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Attack_-_Lotus_-_Basic.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Lotus - Quick Blade</h1>
+      <p class="ability-text">Basic Attack: Launches consecutive attacks of Lotus Quick Blade, dealing 540% Physical DMG in total.
+      </p>
+  </div>
+  <div id="signature" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Attack_-_Lotus_-_Signature.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Lotus - Flurry</h1>
+      <p class="ability-text">Signature Move: Costs 100 Energy. Unleashes Lotus Flurry to deal quick slashes to enemies ahead. Each slash deals 140% Physical DMG. Finishes the move by striking enemies with a heavy blow that deals 1000% Physical DMG.
+      </p>
+  </div>
+  <div id="QTE" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Attack_-_Crimson_Abyss_-_QTE.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Lotus Quick Slash</h1>
+      <p class="ability-text">QTE: Lucia strikes at enemies with her Dual Blades, dealing 1110% Physical DMG in total.
+      </p>
+  </div>
+  <div id="type" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_Core.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Attacker</h1>
+      <p class="ability-text">Extra DMG Bonus increases by 20%.
+      </p>
+  </div>
+  <div id="awakening" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Awakening.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Ultima Awaken</h1>
+      <p class="ability-text">Gains 3 Signal Orbs when entering battle.
+      </p>
+  </div>
+  <div class="tab">
+    <button class="tablinks" onclick="openpassive(event, 'core')"id>Core</button>
+    <button class="tablinks" onclick="openpassive(event, 'leader')">Leader</button>
+    <button class="tablinks" onclick="openpassive(event, 'ss-rank')">SS Rank</button>
+    <button class="tablinks" onclick="openpassive(event, 'sss-rank')">SSS Rank</button>
+    <button class="tablinks" onclick="openpassive(event, 'sss+-rank')">SSS+ Rank</button>
+  </div>
+  <div id="core" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_Core.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Lotus - Dual Blades</h1>
+      <p class="ability-text">Core Passive: Pinging a Red Orb within 4 seconds of any 3-Ping will make Lucia enter Burst mode. Basic Attacks will be replaced with Dual Blades . Lotus - Dual Blades: Launches consecutive attacks at enemies, dealing 1080% Physical DMG in total.
+      </p>
+      <img src="Images/Character Images/Lucia/Red_Lotus_Core_Passive.webp" width="40%">
+  </div>
+  <div id="leader" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_Leader.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Fearless Warrior</h1>
+      <p class="ability-text">Attack of all Attacker Constructs increases by 10%.
+      </p>
+  </div>
+  <div id="ss-rank" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_S.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Rapid Strike - SpiritBlade Slash</h1>
+      <p class="ability-text">Passive: Passive: When attacking airborne targets, deal extra 20% Physical DMG per attack.
+      </p>
+  </div>
+  <div id="sss-rank" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_SS.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Relentless Blade</h1>
+      <p class="ability-text">Passive: Under Burst mode, Extra DMG Bonus increases by 15% .
+      </p>
+  </div>
+  <div id="sss+-rank" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="ability-img">
+          <img src="Images/Character Images/Lucia/Passive_-_Lotus_-_SSS.webp" width="80px" height="74px">
+      </div>
+      <h1 class="ability-title">Core of Clarity</h1>
+      <p class="ability-text">Passive: Extra DMG Bonus of Basic Attack increases by 15% .
+      </p>
+  </div>
+
+<div class="coatings-title">
+    Coatings
+</div> 
+<div class="tab">
+    <button class="tablinks" onclick="opencoating(event, 'generic')"id>Generic</button>
+    <button class="tablinks" onclick="opencoating(event, 'modified')">Generic - Modified</button>
+    <button class="tablinks" onclick="opencoating(event, 'final')">Generic - Final</button>
+    <button class="tablinks" onclick="opencoating(event, 'lotus')">Gray Feathers: Lotus</button>
+    <button class="tablinks" onclick="opencoating(event, 'daybreak')">Daybreak</button>
+    <button class="tablinks" onclick="opencoating(event, 'rain')">Rain Walking</button>
+  </div>
+  <div id="generic" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="coating-img">
+          <img src="Images/Character Images/Lucia/Coating-Lotus-Generic.webp" width="321px" height="520px">
+      </div>
+  </div>
+  <div id="modified" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="coating-img">
+          <img src="Images/Character Images/Lucia/Coating-Lotus-GenericModified.webp" width="321px" height="520px">
+      </div>
+  </div>
+</div>
+
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="https://pgr.kurogame.net/#News">Official News</a></li>
+                    <li><a href="https://pgr.kurogame.net/#Wallpapers">Wallpapers</a></li>
+                    <li><a href="https://pgr.kurogame.net/p/privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="https://pgr.kurogame.net/p/terms_of_service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="https://pgr.kurogame.net/products">Game Merch</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/PGR.Global/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/PGR_GLOBAL"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.reddit.com/r/PunishingGrayRaven/"><i class="fa fa-reddit"></i></a>
+                    <a href="https://www.youtube.com/c/PunishingGrayRaven"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+    
+    
+    
+</html>
+
+
+
+

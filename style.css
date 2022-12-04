@@ -34,7 +34,7 @@ html {
   margin-left: 50px;
   margin-right: 60px;
   padding: 40px;
-  height: 100%;
+  height: 450%;
   background-color: rgba(115, 115, 151, 1);
 }
 
@@ -669,10 +669,12 @@ ul{
 
 /*character page styles*/
 .tab {
+  width:63%;
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid black;
+  background-color: rgba(115, 115, 151, 1);
 }
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -698,9 +700,10 @@ ul{
 
 /* Style the tab content */
 .tabcontent {
+  background-color: inherit
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
+  padding: 20px;
+  border: 1px solid inherit
   border-top: none;
 }
 
@@ -713,5 +716,72 @@ ul{
 
 .topright:hover {color: red;}
 
+.coating-img{
+  width: 70%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ability-img {
+  width: 6%;
+  margin-bottom: 10px;
+  text-align: left;
+  background-color: black;
+}
+
+.ability-title {
+  text-align: left;
+  color: black;
+  font-size: 0.8em;
+  margin-top: -8%;
+  margin-left: 9%;
+}
+.ability-text {
+  text-align: left;
+  color: #000;
+  margin-left: 9%;
+  font-size: 0.4em;
+}
 
 
+.skills {
+  text-align: left;
+  margin-top: 10%;
+}
+
+.character-portrait {
+  padding: 4%;
+  background-color: rgba(115, 115, 151, 1);
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.char-portrait {
+  text-align: left;
+  height: 390px;
+  width: 360px;
+  margin: 20px;
+  border: 5px solid var(--background);
+}
+
+
+
+.biography-title {
+  text-align: center;
+  margin-top: -36.5%;
+  margin-left: 50%;
+  background-color: var(--background);
+}
+
+.biography-text {
+  margin-top: 1%;
+  margin-left: 50%;
+  font-size: 0.5em;
+  text-align: left;
+}
+
+.coatings-title {
+  text-align: center;
+  margin-top: 5%;
+}

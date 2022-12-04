@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+
+html {
+  height: 100%;
+}
+
+
 .constructs {
   position: relative;
-  left: 75px;
+  left: 170px;
   font-family: "Barlow Condensd", sans-serif;
   color: var(--background);
 }
+
+.transcendants {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  font-family: "Barlow Condensd", sans-serif;
+  color: var(--background);
+}
+
+
 
 .icon-text {
   font-weight: 100;
@@ -24,13 +42,6 @@
 
 
 
-section {
-  color: black;
-  height: 100%;
-}
-html {
-  height: 100%;
-}
 
 
 
@@ -50,7 +61,6 @@ body {
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
   --background: rgb(56, 47, 83);
@@ -61,19 +71,57 @@ body {
 }
 
 .char-img {
-  height: 258px;
-  width: 250px;
-  margin-left: 55px;
+  height: 248px;
+  width: 240px;
   margin-right: 80px;
-  margin-bottom: 40px;
   border: 2px solid  rgb(87, 87, 114);
 }
 
 .character-img {
-  padding: 30px;
-  margin-top: 3%;
-  margin-left: 40px;
-  margin-right: 40px;
+  text-align: center;
+  background-color: rgba(115, 115, 151, 1);
+  font-family: "Barlow Condensed", sans-serif;
+  margin-left: 35px;
+  margin-right: 50px;
+}
+
+#section1-char {
+  height: 1900%;
+  background-color: rgba(115, 115, 151, 1);
+}
+
+#section2-char {
+  height: 1900%;
+  background-color: rgba(115, 115, 151, 1);
+}
+
+
+.home {
+  margin-top: 30px;
+  margin-bottom: -20px;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: "Barlow Condensed",sans-serif;
+}
+
+
+.description {
+  margin-top: 7%;
+  padding: 15px;
+  background-color: rgba(115, 115, 151, 1);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 50;
+  font-size: 1.25em;
+  color: white;
+  text-align: center;
+}
+
+.about {
+  height: 100%;
+  margin-top: 3.5%;
+  margin-bottom: 20px;
+  padding: 10px;
   background-color: rgba(115, 115, 151, 1);
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 50;
@@ -81,21 +129,79 @@ body {
   color: white;
 }
 
-
-
-.flex-container {
-	height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:column;
+.about-text {
+  padding: 50px;
+  text-align: center;
+  font-size: 0.75em;
 }
 
-.flex-container > div {
-  width: 40%;
-  height: 100%;
-  margin-top: 20%;
+.about-heading{
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5em;
+}
+
+.char-type {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.constructs-home {
+  position: absolute;
+  top: 1410px;
+  left: 75px;
+  color: white;
+  font-size: 0.8em;
+}
+
+.constructs-home-description {
+  position: absolute;
+  top: 1450px;
+  left: 75px;
+  text-align: left;
+  color: white;
+  font-size: 0.5em;
+}
+
+.transcendants-home {
+  position: absolute;
+  top: 1570px;
+  left: 75px;
+  color: white;
+  font-size: 0.8em;
+}
+
+.transcendants-home-description {
+  position: absolute;
+  top: 1610px;
+  left: 75px;
+  text-align: left;
+  color: white;
+  font-size: 0.5em;
+}
+
+#section1 {
+  height: 30%;
+  background-color: rgba(115, 115, 151, 1);
+}
+
+#section2 {
+  height: 170%;
+  background-color: rgba(115, 115, 151, 1);
+}
+
+#section3 {
+  margin-top: 5%;
+  height: 70%;
+  background-color: rgba(115, 115, 151, 1);
+}
+
+.construct-description {
+  margin-top: 10%;
   margin-left: 80px;
-  margin-right: 50%;
+  margin-right: 80px;
   margin-bottom: 20px;
   padding: 10px;
   background-color: rgba(115, 115, 151, 1);
@@ -211,11 +317,17 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
   .character-img {
-    flex-direction: column;
+    margin-bottom: -5%;
+    padding: 1%;
   }
-  .flex-container > div {
-    flex-direction: column;
-    flex-wrap: wrap;
+
+  .char-img {
+    height: 310px;
+    width: 270px;
+    margin-top: 40px;
+    margin-left: 66px;
+    margin-bottom: -10px;
+    border: 5px solid  rgb(87, 87, 114); 
   }
   
 }
@@ -282,25 +394,176 @@ nav a:hover {
   }
 
   .character-img {
-    padding: 2%;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: -5%;
+    padding: 4%;
     background-color: rgba(115, 115, 151, 1);
     font-family: "Barlow Condensed", sans-serif;
     color: white;
   }
+  
+  .char-name {
+    color: white;
+    
+  }
+
+  #section1-char {
+    height: 405%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 4%;
+    background-color: rgba(115, 115, 151, 1);
+  }
+
+  #section2-char {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: 10%;
+    height: 66%;
+    background-color: rgba(115, 115, 151, 1);
+  }
 
   .constructs {
     position: absolute;
-    top: 100px;
+    top: 110px;
     left: 75px;
     font-family: "Barlow Condensd", sans-serif;
     color: var(--background);
   }
 
+  .transcendants {
+    position: absolute;
+    top: 3260px;
+    left: 75px;
+    font-family: "Barlow Condensd", sans-serif;
+    color: var(--background);
+  }
 
+  .flex-container {
+
+    height: auto;;
+    margin-top: -10%;
+    margin-left: 5%;
+  }
+
+
+  
+  .flex-container > div {
+    width: 40%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: 80px;
+    margin-right: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(115, 115, 151, 1);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 50;
+    font-size: 1.75em;
+    color: white;
+  }
+
+  .home {
+    margin-top: 30px;
+    margin-left: 80px;
+    color: white;
+    text-align: left;
+    font-size: 3em;
+    font-family: "Barlow Condensed",sans-serif;
+  }
+
+  .description {
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: -20%;
+    padding: 10px;
+    background-color: rgba(115, 115, 151, 1);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 50;
+    font-size: 1.75em;
+    color: white;
+    text-align: center;
+  }
+  
+  .about {
+    margin-top: 44.5%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(115, 115, 151, 1);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 50;
+    font-size: 1.75em;
+    color: white;
+  }
+  
+  .about-text {
+    padding: 50px;
+    text-align: left;
+  }
+  
+  .about-heading{
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2em;
+  }
+  
+  #section1 {
+    height: 35%;
+    background-color: rgba(115, 115, 151, 1);
+  }
+  
+  #section2 {
+    height: 60%;
+    background-color: rgba(115, 115, 151, 1);
+  }
+
+  #section3 {
+    margin-top: 5%;
+    height: 60%;
+    background-color: rgba(115, 115, 151, 1);
+  }
+
+  .char-type {
+    text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3em;
+    color: white;
+  }
+
+  .constructs-home {
+    position: absolute;
+    top: 1410px;
+    left: 75px;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  .constructs-home-description {
+    position: absolute;
+    top: 1480px;
+    left: 75px;
+    text-align: left;
+    color: white;
+    font-size: 0.5em;
+  }
+
+  .transcendants-home {
+    position: absolute;
+    top: 1570px;
+    left: 75px;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  .transcendants-home-description {
+    position: absolute;
+    top: 1640px;
+    left: 75px;
+    text-align: left;
+    color: white;
+    font-size: 0.5em;
+  }
 }
 
 

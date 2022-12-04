@@ -641,7 +641,6 @@ body {
   border: 1px solid inherit
 }
 
-/* Style the close button */
 .topright {
   float: right;
   cursor: pointer;
@@ -655,7 +654,6 @@ body {
   margin-left: 50px;
   margin-right: 60px;
   padding: 40px;
-  height: 210%;
   background-color: rgba(115, 115, 151, 1);
 }
 }
